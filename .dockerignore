@@ -1,0 +1,33 @@
+# PyCharm
+.idea/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# VSCode
+.vscode
+
+# Python
+*.egg-info
+
+# Local files
+README.md
+requirements.txt
+conf/
+geoserver-installer.py
+geoserver_installer/
+geoserver.env.sh
