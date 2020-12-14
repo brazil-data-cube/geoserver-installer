@@ -1,55 +1,54 @@
 ..
-    This file is part of GeoServer Installer CLI.
-    Copyright (C) 2021 INPE.
+    This file is part of GeoServer-Installer
+    Copyright (C) 2019-2021 INPE.
 
-    GeoServer Installer CLI is free software; you can redistribute it and/or modify it
+    GeoServer Installer is free software; you can redistribute it and/or modify it
     under the terms of the MIT License; see LICENSE file for more details.
 
-
-.. _Installation:
 
 Installation
 ============
 
+The `geoserver-installer` depends essentially on [Requests](https://requests.readthedocs.io/en/master/), [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/), [pick](https://github.com/wong2/pick) and [Click](https://click.palletsprojects.com/en/7.x/). Please, read the instructions below in order to be able to install  `geoserver-installer`.
 
-Pre-Requirements
-----------------
+Production installation
+-----------------------
 
+**Under Development!**
 
-Built Distributions
--------------------
+Install from `PyPI <https://pypi.org/>`_:
 
+    .. code-block:: shell
 
-Development Installation - GitHub
----------------------------------
-
-
-Clone the Software Repository
-+++++++++++++++++++++++++++++
+        $ pip3 install git+https://github.com/brazil-data-cube/geoserver-installer
 
 
-Install WTSS in Development Mode
-++++++++++++++++++++++++++++++++
+Development installation
+------------------------
+
+Clone the software repository:
+
+.. code-block:: shell
+
+        $ git clone https://github.com/brazil-data-cube/geoserver-installer.git
 
 
-Run the Tests
-+++++++++++++
+Go to the source code folder:
+
+.. code-block:: shell
+
+        $ cd geoserver-installer
 
 
-Build the Documentation
-+++++++++++++++++++++++
+Install in development mode:
+
+.. code-block:: shell
+
+        $ pip3 install -e .[all]
 
 
-You can generate the documentation based on Sphinx with the following command::
+Run the tests:
 
-    python setup.py build_sphinx
+.. code-block:: shell
 
-
-The above command will generate the documentation in HTML and it will place it under::
-
-    docs/sphinx/_build/html/
-
-
-You can open the above documentation in your favorite browser, as::
-
-    firefox docs/sphinx/_build/html/index.html
+        $ ./run-tests.sh

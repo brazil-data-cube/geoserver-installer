@@ -25,7 +25,6 @@ CLI to automate the process of creating custom GeoServer Dockerfiles.
 
     installation
     usage
-    api
     repository
     history
 
