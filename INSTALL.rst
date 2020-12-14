@@ -14,7 +14,7 @@ The ``geoserver-installer`` depends essentially on `Requests <https://requests.r
 Production installation
 -----------------------
 
-Install from `PyPI <https://pypi.org/>`_:
+Install from `Github <https://github.com/brazil-data-cube/geoserver-installer>`_:
 
     .. code-block:: shell
 
