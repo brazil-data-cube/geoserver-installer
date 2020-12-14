@@ -13,9 +13,11 @@ from .extension import (get_geoserver_extensions,
                         get_geoserver_extensions_community, select_extensions)
 from .image import create_dockerfile, create_install_script
 from .utils import copy_script_files
+from .version import __version__
 
 
 @click.group()
+@click.version_option(__version__)
 def cli():
     """geoserver_installer cli."""
     pass
