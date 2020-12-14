@@ -1,14 +1,15 @@
-#
-# This file is part of Repository of Dockerfiles for the Brazil Data Cube Project.
-# Copyright (C) 2021 INPE.
-#
-# The Repository of Dockerfiles for the Brazil Data Cube Project is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+"""
+This file is part of Repository of Dockerfiles for the Brazil Data Cube Project. Copyright (C) 2021 INPE.
+
+The Repository of Dockerfiles for the Brazil Data Cube Project is free software; you can redistribute it and/or
+modify it under the terms of the MIT License; see LICENSE file for more details.
+"""
 
 
 def create_install_script(extensions_url: list, file_path: str, lib_path: str) -> str:
-    """Function for creating plugin installation script
+    """Create GeoServer plugin installation script.
+
+    This function create a shell script to make GeoServer plugin install process more easy.
     Args:
         extensions_url (list): URL list of extensions to install
         file_path (str): Absolute path where the installation file will be saved
@@ -16,7 +17,6 @@ def create_install_script(extensions_url: list, file_path: str, lib_path: str) -
     Returns:
         str: Path to plugins installation file
     """
-
     with open(file_path, 'w') as f:
         f.write("#!/bin/bash\n")
         f.write("""
@@ -34,7 +34,9 @@ def create_install_script(extensions_url: list, file_path: str, lib_path: str) -
 
 
 def create_dockerfile(file_path: str, g_version: str = "2.8.5", dockerfile_path: str = "./Dockerfile") -> None:
-    """Function to generate image Dockerfile with plugins defined in installation script
+    """Create a custom GeoServer Dockerfile with plugins.
+
+    This function generates an Dockerfile with plugins defined in installation script.
     Args:
         file_path (str): Path to installation file
         g_version (str): GeoServer Version
@@ -42,7 +44,6 @@ def create_dockerfile(file_path: str, g_version: str = "2.8.5", dockerfile_path:
     Returns:
         None
     """
-
     with open(dockerfile_path, "w") as f:
         dockerfile_content = """
             FROM tomcat:8.0-jre8
