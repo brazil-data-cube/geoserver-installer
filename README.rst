@@ -54,5 +54,14 @@ GeoServer Installer CLI
 About
 =====
 
+`geoserver-installer` is a CLI tool to automate the GeoServer Dockerfiles with custom official and community extensions. This tool support all GeoServer version avaliable on GeoServer's SourceForge Repository.
 
-CLI to automate the process of creating custom GeoServer Dockerfiles
+Installation
+============
+
+See `INSTALL.rst <./INSTALL.rst>`_.
+
+Using geoserver-installer
+==========================
+
+See `CLI.rst <./CLI.rst>`_.

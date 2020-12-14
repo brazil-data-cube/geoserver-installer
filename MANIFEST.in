@@ -10,8 +10,12 @@ exclude docs/sphinx/_build
 include *.py
 include *.rst
 include *.sh
+include *CLI.rst
+include *INSTALL.rst
 include LICENSE
 include pytest.ini
+include .dockerignore
+include .editorconfig
 recursive-exclude docs/sphinx/_build *
 recursive-include geoserver_installer *.py
 recursive-include docs/sphinx *.bat
@@ -23,3 +27,5 @@ recursive-include docs/sphinx *.rst
 recursive-include docs/sphinx Makefile
 recursive-include examples *.py
 recursive-include tests *.py
+recursive-include geoserver_installer *.dockerignore
+recursive-include geoserver_installer *.sh
