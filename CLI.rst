@@ -31,8 +31,8 @@ If you want to know more about the command line options, try::
       build  Create custom GeoServer Dockerfiles
 
 The ``build`` command allows you to specify the following flags (see ``geoserver-installer build --help``):
-- `--disable-community-extensions``: Disable selection of community plugins.
 
+- ``--disable-community-extensions``: Disable selection of community plugins.
 - ``--disable-all-extensions``: Disable selection of all plugins.
 
 

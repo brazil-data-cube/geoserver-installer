@@ -9,12 +9,10 @@
 Installation
 ============
 
-The `geoserver-installer` depends essentially on [Requests](https://requests.readthedocs.io/en/master/), [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/), [pick](https://github.com/wong2/pick) and [Click](https://click.palletsprojects.com/en/7.x/). Please, read the instructions below in order to be able to install  `geoserver-installer`.
+The ``geoserver-installer`` depends essentially on `Requests <https://requests.readthedocs.io/en/master/>`_, `Pick <https://github.com/wong2/pick>`_, `Beautiful Soup <https://www.crummy.com/software/BeautifulSoup/>`_ and `Click <https://click.palletsprojects.com/en/7.x/>`_. Please, read the instructions below in order to be able to install  ``geoserver-installer``.
 
 Production installation
 -----------------------
-
-**Under Development!**
 
 Install from `PyPI <https://pypi.org/>`_:
 
